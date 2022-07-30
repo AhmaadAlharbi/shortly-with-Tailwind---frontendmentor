@@ -19,7 +19,7 @@
     <script src="js/script.js" defer></script>
     <title>Shortly</title>
   </head>
-  <body class="font-sans">
+  <body class="font-sans relative">
     <!-- Hero section -->
     <section id="hero">
       <div class="container max-w-6xl mx-auto px-6 my-8">
@@ -65,10 +65,10 @@
         >
           <!-- text container -->
           <div class="text-center md:text-left">
-            <h1 class="text-6xl font-bold my-3">
+            <h1 class="text-5xl md:text-6xl font-bold my-3">
               More than just shorter links
             </h1>
-            <p class="text-grayishViolet my-6 max-w-md text-2xl">
+            <p class="text-grayishViolet my-6 max-w-md text-xl">
               Build your brand's recognition and get detailed insights on how
               your links are performing.
             </p>
@@ -85,13 +85,23 @@
     </section>
 
     <!-- input link short -->
-    <section id="link" class="bg-gray-100">
-      <div class="container max-w-6xl px-56 my-8 absolute bottom-0 right-0">
+    <section
+      id="link"
+      class="bg-gray-100 py-5 md:py-40 md:px-20 mt-5 md:mt-20 px-2"
+    >
+      <div class="my-8">
         <div
-          class="bg-darkViolet py-16 w-max-6xl flex justify-center space-x-4 rounded-xl"
+          class="bg-darkViolet max-w-6xl py-10 px-10 md:px-20 mx-auto flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0 rounded-sm md:-translate-y-64"
         >
-          <input type="text" class="w-11 py-3 rounded-xl" />
-          <button class="bg-cyan text-white py-1 px-10 rounded-xl">
+          <input
+            type="text"
+            class="w-full py-5 px-2 md:py-0 md:px-2 rounded-lg"
+            placeholder="shorten a link here ..."
+          />
+
+          <button
+            class="bg-cyan text-white py-5 px-2 md:py-1 md:px-7 rounded-xl font-bold text-xl"
+          >
             shorten it
           </button>
         </div>
