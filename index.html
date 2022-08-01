@@ -63,7 +63,7 @@
         <!-- mobile NAV -->
         <!-- LANDING PAGE -->
         <div
-          class="relative flex py-20 mt-2 flex-col-reverse flex-wrap justify-between items-center md:flex-row max-w-8xl md:mt-20"
+          class="relative flex py-20 mb-52 flex-col-reverse flex-wrap justify-between items-center md:flex-row max-w-8xl md:mt-20"
         >
           <!-- text container -->
           <div class="text-center md:text-left flex-1">
@@ -89,22 +89,27 @@
     </section>
 
     <!-- input link short -->
-    <section id="link" class="bg-gray-100 py-5 md:px-20 mt-5 px-2">
-      <div class="my-8 md:my-0">
-        <div
-          class="bg-darkViolet max-w-6xl py-10 md:mt-36 px-10 md:px-20 mx-auto flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0 rounded-sm md:-translate-y-64"
-        >
-          <input
-            type="text"
-            class="w-full py-5 px-2 md:py-0 md:px-2 rounded-lg"
-            placeholder="shorten a link here ..."
-          />
 
-          <button
-            class="bg-cyan hover:opacity-80 text-white py-4 px-2 md:py-0 md:px-7 rounded-xl font-bold text-xl"
-          >
-            shorten it
-          </button>
+    <div
+      class="bg-darkViolet max-w-6xl absolute left-0 right-0 py-10 md:my-40 px-10 md:px-20 mx-auto flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0 rounded-sm md:-translate-y-64"
+    >
+      <input
+        type="text"
+        class="w-full py-5 px-2 md:py-0 md:px-2 rounded-lg"
+        placeholder="shorten a link here ..."
+      />
+
+      <button
+        id="submit"
+        class="bg-cyan hover:opacity-80 text-white py-4 px-2 md:py-0 md:px-7 rounded-xl font-bold text-xl"
+      >
+        shorten it
+      </button>
+    </div>
+    <section id="link" class="bg-gray-100 py-5 md:px-20 mt-5 px-2">
+      <div class="my-8 md:my-0 bg-gray-100">
+        <div class="bg-pink-400 block my-20 max-w-6xl mx-auto">
+          <div class="links" id="links"></div>
         </div>
         <div
           class="flex mt-10 md:mt-0 flex-col justify-center items-center px-4"
@@ -213,7 +218,7 @@
     <section>
       <div id="boost" class="bg-darkViolet">
         <div class="flex flex-col py-20 justify-center items-center">
-          <h2 class="text-3xl my-4 text-white font-bold">
+          <h2 class="text-4xl my-4 text-white font-bold">
             Boost Your Links today
           </h2>
           <button
