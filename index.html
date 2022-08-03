@@ -61,13 +61,53 @@
             </div>
           </div>
           <!-- menu icon -->
-          <div class="md:hidden flex-col items-center cursor-pointer px-4">
+          <div
+            class="md:hidden flex-col items-center cursor-pointer px-4"
+            id="burger"
+          >
             <div class="w-[35px] h-[5px] my-[6px] bg-black"></div>
             <div class="w-[35px] h-[5px] my-[6px] bg-black"></div>
             <div class="w-[35px] h-[5px] my-[6px] bg-black"></div>
           </div>
         </nav>
         <!-- mobile NAV -->
+        <div id="mobile-nav" class="hidden duration-500 transition-all">
+          <div
+            class="md:hidden bg-darkViolet max-w-6xl px-20 relative text-white font-bold mt-10 py-10 space-y-8 flex flex-col h-full"
+          >
+            <div
+              class="flex text-white flex-col items-center space-y-4 md:hidden"
+            >
+              <div class="group">
+                <a href="" class="group-hover:text-veryDarkBlue">Features</a>
+              </div>
+              <div class="group">
+                <a href="" class="group-hover:text-veryDarkBlue">Pricing</a>
+              </div>
+              <div class="group">
+                <a
+                  href=""
+                  class="group-hover:text-veryDarkBlue border-b border-gray-100 pb-6 w-full text-center"
+                  >Resources</a
+                >
+              </div>
+            </div>
+
+            <!-- buttoms links -->
+            <div class="flex flex-col space-y-6 md:hidden items-center">
+              <div class="group text-white">
+                <a href="" class="group-hover:text-veryDarkBlue">Login</a>
+              </div>
+              <div class="group">
+                <a
+                  href=""
+                  class="bg-cyan text-white py-2 px-4 rounded-2xl hover:opacity-80"
+                  >Sign Up</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- LANDING PAGE -->
         <div
           class="relative flex py-20 mb-52 flex-col-reverse flex-wrap justify-between items-center md:flex-row max-w-8xl md:mt-20"

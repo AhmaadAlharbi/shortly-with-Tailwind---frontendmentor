@@ -5,6 +5,13 @@ const api_base = "https://api.shrtco.de/v2/shorten?url=";
 const linksDiv = document.getElementById("links");
 const innerLinksDiv = document.getElementById("inner-links");
 const error = document.getElementById("error");
+const burger = document.getElementById("burger");
+const mobileNav = document.getElementById("mobile-nav");
+
+//toggle mobile nav
+burger.addEventListener("click", () => {
+  mobileNav.classList.toggle("hidden");
+});
 //validation
 const isValidUrl = (urlString) => {
   var urlPattern = new RegExp(
